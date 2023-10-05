@@ -71,7 +71,7 @@ $is_builder = ( function_exists( 'fusion_is_preview_frame' ) && fusion_is_previe
 		<a class="fusion-one-page-text-link fusion-page-load-link" tabindex="-1" href="#" aria-hidden="true"><?php esc_html_e( 'Page load link', 'Avada' ); ?></a>
 
 		<div class="avada-footer-scripts">
-			<?php // wp_footer(); ?>
+			<?php  wp_footer(); ?>
 		</div>
 
 		<?php  get_template_part( 'templates/to-top' ); ?>

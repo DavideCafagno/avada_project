@@ -34,7 +34,7 @@ $my_query = new WP_Query($args);
 </style>
 <script>
     function like(){
-       alert('Like!!!');
+    alert("Like!!!");
     }
 </script>
 <div id="posts_list" class="row justify-content-center">
@@ -47,8 +47,7 @@ $my_query = new WP_Query($args);
                 <img class="reflect rounded " src="<?php echo get_the_post_thumbnail_url(); ?>">
 
             <?php endif; ?>
-            <div style="min-width: 300px;"
-                 class="hoverimg  my-4 p-4 mx-2 text-center border border-5 border-secondary rounded hadow-lg">
+            <div style="min-width: 300px;" class="hoverimg  my-4 p-4 mx-2 text-center border border-5 border-secondary rounded hadow-lg">
 
                 <div class="card-header mb-4" style="height: 300px;">
                     <div class="card-title display-3 rounded "><?php echo get_the_title(); ?></div>

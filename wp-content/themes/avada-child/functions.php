@@ -7,3 +7,11 @@ function loadAvadaScriptCss(){
     wp_register_script('avada_bootstrap_script','https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js');
     wp_enqueue_script('avada_bootstrap_script');
 }
+
+add_shortcode('register_form', 'add_register_form');
+
+function add_register_form (){
+    //ob_start();
+        get_template_part('template/registrazione');
+    //return ob_end_flush();
+}

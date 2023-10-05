@@ -12,15 +12,15 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 <?php get_header(); ?>
+
 <section id="content" style="<?php echo esc_attr( apply_filters( 'awb_content_tag_style', '' ) ); ?>">
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h1 class="display-1"><?php echo the_title();?></h1>
+            <h1 class="display-2"><?php echo the_title();?></h1>
             <?php global $pagename;
             if($pagename == 'pagina-esercizi'):?>
-                <?php
-                get_template_part('/template/esercizio-template'); ?>
+                <?php get_template_part('/template/esercizio-template'); ?>
             <?php else:?>
 			<?php echo fusion_render_rich_snippets_for_pages(); // phpcs:ignore WordPress.Security.EscapeOutput ?>
 

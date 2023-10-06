@@ -17,7 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php while ( have_posts() ) : ?>
 		<?php the_post(); ?>
 		<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h1 class="display-2"><?php echo the_title();?></h1>
+
             <?php global $pagename;
             if($pagename == 'pagina-esercizi'):?>
                 <?php get_template_part('/template/esercizio-template'); ?>

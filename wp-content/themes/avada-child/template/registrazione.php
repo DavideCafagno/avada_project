@@ -1,30 +1,31 @@
+<h1 class="display-2"><?php echo __('REGISTRATION', 'avada-child'); ?></h1>
 <div class="container-md rounded border-2 border-secondary p-4 ">
     <form action="../#" method="post" class="needs-validation row" id="registerForm">
         <div class="col-12 col-sm-4  my-2">
-            <label for="registerName" class="form-label">Nome</label>
+            <label for="registerName" class="form-label"><?php echo __('Name', 'avada-child'); ?></label>
             <input type="text" oninput="validate(this)" onblur="upper(this)"
                    class="form-control shadow-sm border border-1 " aria-describedby="nomeprepend" id="registerName"
                    required>
-            <div class="valid-feedback">Name is valid.</div>
-            <div class="invalid-feedback ">Insert valid name.</div>
+            <div class="valid-feedback"><?php echo __('Name is valid.', 'avada-child'); ?></div>
+            <div class="invalid-feedback "><?php echo __('Insert valid name.', 'avada-child'); ?></div>
         </div>
         <div class="col-12 col-sm-4 my-2">
-            <label for="registerSurname" class="form-label">Cognome</label>
+            <label for="registerSurname" class="form-label"><?php echo __('Surame', 'avada-child'); ?></label>
             <input type="text" oninput="validate(this)" onblur="upper(this)"
                    class="form-control shadow-sm border border-1 " id="registerSurname" required>
-            <div class="valid-feedback">Surname is valid</div>
-            <div class="invalid-feedback">Insert valid surname.</div>
+            <div class="valid-feedback"><?php echo __('Surname is valid.', 'avada-child'); ?></div>
+            <div class="invalid-feedback"><?php echo __('Insert valid surname.', 'avada-child'); ?></div>
         </div>
         <div class="col-12 col-sm-4 my-2">
-            <label for="registerEmail" class="form-label">Email</label>
+            <label for="registerEmail" class="form-label"><?php echo __('Email', 'avada-child'); ?></label>
             <input type="email" class="form-control shadow-sm border border-1 " id="registerEmail" required>
-            <div class="valid-feedback">Email is valid</div>
-            <div class="invalid-feedback">Insert valid Email.</div>
+            <div class="valid-feedback"><?php echo __('Email is valid.', 'avada-child'); ?></div>
+            <div class="invalid-feedback"><?php echo __('Insert valid email.', 'avada-child'); ?></div>
         </div>
         <div class="col-12 col-sm-4 my-2">
-            <label for="registerFacebook" class="form-label">Profilo Facebook</label>
+            <label for="registerFacebook" class="form-label"><?php echo __('Facebook Profile', 'avada-child'); ?></label>
             <input type="text" class="form-control shadow-sm border border-1 " id="registerFacebook">
-            <div class="valid-feedback">Facebook not is required</div>
+            <div class="valid-feedback"><?php echo __('Facebook Profile is not required.', 'avada-child'); ?></div>
         </div>
         <div class="col-12 col-sm-4 my-2">
             <label for="registerTelephone" class="form-label">Numero Telefono</label>
